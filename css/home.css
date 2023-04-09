@@ -1,0 +1,89 @@
+.welcome-to-beautgenics-container {
+	/* text-align: center; */
+	line-height: 0.8;
+	font-size: 35px;
+	padding-top: 52px;
+}
+.beautgenics {
+	color: #c83b53;
+}
+.container {
+	max-width: 1000px;
+	margin: auto;
+	padding: 0 15px;
+	text-align: center;
+}
+.active {
+	margin: 25px 0;
+}
+.an-app-where {
+	padding-top: 13px;
+}
+.lets-get-started {
+	padding-top: 60px;
+}
+.welcome-inner a,
+.welcome-inners a {
+	color: #252525;
+}
+.welcome-inner a:hover,
+.welcome-inners a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+.rectangle-parent {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-top: 25px;
+	text-decoration: none;
+	width: 355px;
+	background: #e0e0e0;
+	border-radius: 5px;
+	border: solid #e0e0e0 2px;
+	height: 54px;
+	display: flex;
+	justify-content: space-evenly;
+}
+.google-icon {
+	width: 30px;
+	height: 30px;
+	margin: 11px 0;
+}
+.continue-with-google {
+	margin: 11px 0;
+}
+.forgot-password {
+	color: #c83b53;
+}
+.rectangle-parents {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-top: 25px;
+	text-decoration: none;
+	width: 355px;
+	background: #000000;
+	border-radius: 5px;
+	border: solid #e0e0e0 2px;
+	height: 54px;
+	color: #fff;
+	display: flex;
+	justify-content: space-evenly;
+}
+#login {
+	margin: 50px auto;
+	text-align: center;
+}
+
+#message {
+	margin: 50px auto;
+	padding: 20px;
+	background-color: #f2f2f2;
+	border-radius: 5px;
+	text-align: center;
+	max-width: 500px;
+	display: none; /* Hide the message element by default */
+}

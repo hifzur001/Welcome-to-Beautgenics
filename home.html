@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1, width=device-width" />
+		<link rel="stylesheet" href="./css/home.css" />
+		<title>Welcome to Beautgenics</title>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+		<link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+	</head>
+	<body>
+		<div class="container">
+			<img src="/img/bg-1.jpg" class="img-fluid" alt="Navbar" />
+			<img src="./img/fsaf.png" class="img-fluid active" alt="" />
+			<div class="welcome">
+				<div class="welcome-to-beautgenics-container">
+					<p class="welcome-to">Welcome to</p>
+					<p class="beautgenics">Beautgenics</p>
+				</div>
+				<div class="an-app-where">
+					An app where you can manage all your Beauty Analyst activties & much
+					more...
+				</div>
+				<div class="lets-get-started">Let’s get started...</div>
+				<div class="fill-17-parent">
+					<img class="fill-17-icon" alt="" src="./public/fill-17.svg" /><img
+						class="iconswifistatus-bar"
+						alt=""
+						src="./public/iconswifistatus-bar.svg"
+					/><img
+						class="iconsbuttarystatus-bar"
+						alt=""
+						src="./public/iconsbuttarystatus-bar.svg"
+					/>
+					<img
+						class="iconsnetworkstatus-bar"
+						alt=""
+						src="./public/iconsnetworkstatus-bar.svg"
+					/>
+				</div>
+
+				<div id="login">
+					<div class="welcome-inner">
+						<a id="google-login" href="dashboard.html"
+							><div class="rectangle-parent">
+								<div class="group-child"></div>
+								<img
+									class="google-icon"
+									class="img-fluid google-logo"
+									alt=""
+									src="./img/google-color-svgrepo-com.svg"
+								/>
+								<div class="continue-with-google">Continue with Google</div>
+							</div></a
+						>
+					</div>
+					<div class="welcome-inners">
+						<div class="rectangle-group">
+							<a id="apple-login" href="dashboard.html"
+								><div class="rectangle-parents">
+									<div class="group-child"></div>
+									<img
+										class="apple-icon"
+										class="img-fluid google-logo"
+										alt=""
+										src="./img/apple-svgrepo-com.svg"
+									/>
+									<div class="continue-with-google">Continue with Apple</div>
+								</div></a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="already-have-an-container">
+					<span>Already have an account? </span
+					><span class="sign-in"
+						><a href="signin.html" class="forgot-password">Sign in</a></span
+					>
+				</div>
+				<div id="message">
+					<p>
+						Welcome! You have successfully signed in with your Google or Apple
+						account.
+					</p>
+					<p>
+						You will now be redirected to your dashboard where you can access
+						your account information and manage your settings. Thank you for
+						using our platform!
+					</p>
+				</div>
+			</div>
+		</div>
+		<script>
+			// Google login button
+			var googleLoginButton = document.getElementById("google-login");
+			googleLoginButton.onclick = function () {
+				// Perform Google login authentication process
+				// ...
+				// Once the user has successfully logged in, show the message and redirect to dashboard
+				showRedirectMessage();
+			};
+
+			// Apple login button
+			var appleLoginButton = document.getElementById("apple-login");
+			appleLoginButton.onclick = function () {
+				// Perform Apple login authentication process
+				// ...
+				// Once the user has successfully logged in, show the message and redirect to dashboard
+				showRedirectMessage();
+			};
+
+			// Function to show the message and redirect to dashboard
+			function showRedirectMessage() {
+				var loginDiv = document.getElementById("login");
+				var messageDiv = document.getElementById("message");
+				loginDiv.style.display = "none"; // Hide the login buttons
+				messageDiv.style.display = "block"; // Show the message
+				// Set a timeout of 3 seconds (3000 milliseconds) before redirecting to dashboard
+				setTimeout(() => {}, 3000);
+				window.location.href = "/dashboard.html";
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,81 @@
+.container {
+	max-width: 1000px;
+	margin: auto;
+	padding: 0 15px;
+}
+.backbtn {
+	width: 35px;
+	height: 35px;
+}
+.fsfscFhgvb {
+	padding: 48px 0;
+}
+form i {
+	margin-left: -30px;
+	cursor: pointer;
+}
+.password-container {
+	width: 400px;
+	position: relative;
+	margin: 10px 0;
+}
+.password-container input[type="password"],
+.password-container input[type="text"] {
+	padding: 12px 36px 12px 15px;
+	box-sizing: border-box;
+}
+.fa-eye {
+	position: absolute;
+	top: 28%;
+	right: 4%;
+	cursor: pointer;
+	color: lightgray;
+}
+#eye {
+	display: none;
+}
+::placeholder {
+	color: #666;
+}
+input {
+	width: 354px;
+	height: 54px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+	padding: 12px 36px 12px 15px;
+}
+.form-check input {
+	position: absolute;
+	left: 25px;
+	width: 15px;
+	top: 7px;
+}
+.signpopup {
+	margin: 0 8px;
+	color: #004dc9;
+	position: relative;
+	top: -40px;
+}
+.signpopup a:hover {
+	text-decoration: none;
+}
+#btn-block {
+	width: 354px;
+	height: 54px;
+	border: none;
+	cursor: pointer;
+	background: #c83b53;
+	color: #fff;
+}
+.remeber {
+	margin-top: 25px;
+}
+.form-check-label {
+	padding-left: 15px;
+}
+.dont-have-account {
+	display: flex;
+	justify-content: space-evenly;
+	max-width: 30%;
+}
+
